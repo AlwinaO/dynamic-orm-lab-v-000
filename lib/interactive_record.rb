@@ -71,7 +71,7 @@ class InteractiveRecord
     SELECT * FROM #{self.table_name}
     WHERE #{attribute_hash.keys.first} = "#{format_value}"
     SQL
-    binding.pry
+    # binding.pry
 
     DB[:conn].execute(sql)
 
